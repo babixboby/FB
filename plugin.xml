@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.game.flappybird.plugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" mlns:android="http://schemas.android.com/apk/res/android">
+
+	<name>FlappyBird</name>
+
+	<js-module name="FlappyBird" src="www/FlappyBird.js">
+		<clobbers target="FlappyBird" />
+	</js-module>
+
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+            <feature name="FlappyBird">
+                <param name="android-package" value="com.game.flappybird.plugin.FlappyBird" />
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <activity android:label="Main Activity" android:name="com.game.flappybird.plugin.MainActivity"></activity>
+        </config-file>
+		
+		<resource-file src="src/android/res/mipmap/bg_day.png" target="res/mipmap/bg_day.png" />
+        <resource-file src="src/android/res/mipmap/bg_night.png" target="res/mipmap/bg_night.png" />
+        <resource-file src="src/android/res/mipmap/bird0_0.png" target="res/mipmap/bird0_0.png" />
+        <resource-file src="src/android/res/mipmap/bird0_1.png" target="res/mipmap/bird0_1.png" />
+        <resource-file src="src/android/res/mipmap/bird0_2.png" target="res/mipmap/bird0_2.png" />
+        <resource-file src="src/android/res/mipmap/bird0_4.png" target="res/mipmap/bird0_4.png" />
+        <resource-file src="src/android/res/mipmap/font_0.png" target="res/mipmap/font_0.png" />
+        <resource-file src="src/android/res/mipmap/font_1.png" target="res/mipmap/font_1.png" />
+        <resource-file src="src/android/res/mipmap/font_2.png" target="res/mipmap/font_2.png" />
+        <resource-file src="src/android/res/mipmap/font_3.png" target="res/mipmap/font_3.png" />
+        <resource-file src="src/android/res/mipmap/font_4.png" target="res/mipmap/font_4.png" />
+        <resource-file src="src/android/res/mipmap/font_5.png" target="res/mipmap/font_5.png" />
+        <resource-file src="src/android/res/mipmap/font_6.png" target="res/mipmap/font_6.png" />
+        <resource-file src="src/android/res/mipmap/font_7.png" target="res/mipmap/font_7.png" />
+        <resource-file src="src/android/res/mipmap/font_8.png" target="res/mipmap/font_8.png" />
+        <resource-file src="src/android/res/mipmap/font_9.png" target="res/mipmap/font_9.png" />
+        <resource-file src="src/android/res/mipmap/game_over.png" target="res/mipmap/game_over.png" />
+        <resource-file src="src/android/res/mipmap/get_ready.png" target="res/mipmap/get_ready.png" />
+        <resource-file src="src/android/res/mipmap/land.png" target="res/mipmap/land.png" />
+        <resource-file src="src/android/res/mipmap/pipe_down.png" target="res/mipmap/pipe_down.png" />
+        <resource-file src="src/android/res/mipmap/pipe_up.png" target="res/mipmap/pipe_up.png" />
+        <resource-file src="src/android/res/mipmap/title.png" target="res/mipmap/title.png" />
+        <resource-file src="src/android/res/mipmap/tutorial.png" target="res/mipmap/tutorial.png" />
+          
+        <resource-file src="src/android/res/values/colors.xml" target="res/values/color.xml" />
+        <resource-file src="src/android/res/drawable/selector_button.xml" target="res/drawable/selector_button.xml" />
+        <resource-file src="src/android/res/drawable/shape_score_panel.xml" target="res/drawable/shape_score_panel.xml" />
+		
+		<config-file parent="/*" target="AndroidManifest.xml"></config-file>
+		<source-file src="src/android/FlappyBird.java" target-dir="src/com/game/flappybird/plugin/FlappyBird" />
+		<source-file src="src/android/MainActivity.java" target-dir="src/com/game/flappybird/plugin/FlappyBird" />
+		 <source-file src="src/android/FlappySurfaceView.java" target-dir="src/com/game/flappybird/plugin/FlappyBird" />
+		<source-file src="src/android/activity_new.xml" target-dir="res/layout"/>
+	</platform>
+
+</plugin>

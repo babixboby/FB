@@ -1,0 +1,14 @@
+{
+  "name": "com.game.flappybird.plugin",
+  "version": "0.1.0",
+  "description": "A sample for a new cordova plugin",
+  "cordova": {
+    "id": "cordova-plugins-flappybird",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [],
+  "author": "Ardian S",
+  "license": "Apache-2"
+}
